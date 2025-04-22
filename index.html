@@ -9,10 +9,45 @@
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/kursor.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
 
     <title>Buyu</title>
   </head>
   <body class="relative">
+    <!--Overlay Menu-->
+    <div class="overlay-menu flex flex-col i">
+      <span id="menuClose" class="h-fit w-fit mt-12 cursor-pointer self-center">
+        <i class="fas fa-xmark text-white"></i>
+      </span>
+      <div class="container">
+        <!--Menu Links-->
+        <div class="overlay-links space-y-3">
+          <a href="#">
+            <h2 class="text-lg lg:text-4xl font-semibold text-center">Home</h2>
+          </a>
+          <a href="#">
+            <h2 class="text-lg lg:text-4xl font-semibold text-center">
+              About us
+            </h2>
+          </a>
+          <a href="#">
+            <h2 class="text-lg lg:text-4xl font-semibold text-center">
+              Services
+            </h2>
+          </a>
+          <a href="#">
+            <h2 class="text-lg lg:text-4xl font-semibold text-center">
+              Contact
+            </h2>
+          </a>
+        </div>
+      </div>
+    </div>
+
     <!--Header-->
     <header class="absolute top-0 left-0 w-full h-auto z-20">
       <div class="container flex justify-between items-center pt-5">
@@ -25,7 +60,7 @@
         /></a>
 
         <!--Menu Button-->
-        <button class="menu-btn border-noneo outline-none">
+        <button id="menuOpen" style="outline: none; border: none">
           <img
             src="./assets/images/MENU.png"
             alt="menu-btn"
@@ -159,11 +194,11 @@
         class="africa-people absolute"
         style="
           bottom: 0;
-          right: 36%;
+          right: 37%;
           width: auto;
-          height: 150px;
+          height: 160px;
           object-fit: fill;
-          z-index: 3;
+          z-index: 4;
           filter: grayscale(1);
         "
       />
@@ -202,11 +237,11 @@
         style="
           bottom: 0;
           right: 0;
-          width: 45%;
+          width: 46%;
           height: auto;
-          max-height: 260px;
+          max-height: 220px;
           object-fit: fill;
-          z-index: 2;
+          z-index: 3;
           filter: grayscale(1);
         "
       />
@@ -222,6 +257,32 @@
           object-fit: fill;
           z-index: 3;
           filter: grayscale(1);
+        "
+      />
+      <img
+        src="./assets/images/Wangari maathai.png"
+        alt="wangari-maathai"
+        class="wangari-maathai absolute"
+        style="
+          bottom: 29%;
+          right: 17%;
+          width: auto;
+          height: 200px;
+          object-fit: fill;
+          z-index: 2;
+        "
+      />
+      <img
+        src="./assets/images/ELUID TEXT copy.png"
+        alt="eluid-text"
+        class="eluid-text absolute"
+        style="
+          bottom: 58.7%;
+          right: 15%;
+          width: auto;
+          height: 90px;
+          object-fit: fill;
+          z-index: 1;
         "
       />
 
@@ -273,5 +334,16 @@
         />
       </div>
     </main>
+
+    <!--JS Scripts-->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/fontawesome.min.js"></script>
+    <script src="./assets/js/gsap.min.js"></script>
+    <script src="./assets/js/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/lenis.min.js"></script>
+    <script src="./assets/js/split-type.min.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
