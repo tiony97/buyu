@@ -69,3 +69,237 @@ body {
     }
   }
 }
+
+/* Home page background images */
+.nairobi-cbd {
+  width: 56%;
+  height: 100%;
+  object-fit: fill;
+  object-position: left center;
+  z-index: 1;
+}
+.nairobi-highway {
+  width: 45%;
+  height: 100%;
+  object-fit: fill;
+}
+.woman-farming {
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: 180px;
+  object-fit: fill;
+  z-index: 2;
+  filter: grayscale(1);
+}
+.africa-map {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 90%;
+  object-fit: fill;
+  z-index: 1;
+  filter: grayscale(1);
+}
+.torn-bottom-paper {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  z-index: 5;
+}
+.africa-nature {
+  bottom: 0;
+  left: 0;
+  width: 55%;
+  height: auto;
+  object-fit: fill;
+  z-index: 2;
+  filter: grayscale(1);
+}
+.elephants {
+  bottom: 0;
+  left: 25%;
+  width: auto;
+  height: 150px;
+  object-fit: fill;
+  z-index: 5;
+  filter: grayscale(1);
+}
+.maasai {
+  bottom: 17%;
+  left: 20%;
+  width: auto;
+  height: 100px;
+  object-fit: fill;
+  z-index: 1;
+  filter: grayscale(1);
+}
+.african-rocks {
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  height: auto;
+  object-fit: fill;
+  z-index: 2;
+  filter: grayscale(1);
+}
+.africa-people {
+  bottom: 0;
+  right: 37%;
+  width: auto;
+  height: 160px;
+  object-fit: fill;
+  z-index: 4;
+  filter: grayscale(1);
+}
+.torn-paper-top-right {
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 170px;
+  object-fit: fill;
+  z-index: 2;
+  filter: grayscale(1);
+}
+.ripped-paper {
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: auto;
+  object-fit: fill;
+  z-index: 1;
+  filter: grayscale(1);
+}
+.tree-land {
+  bottom: 0;
+  right: 0;
+  width: 46%;
+  height: auto;
+  max-height: 220px;
+  object-fit: fill;
+  z-index: 3;
+  filter: grayscale(1);
+}
+.women-farming {
+  bottom: 36%;
+  right: 0;
+  width: auto;
+  height: 120px;
+  object-fit: fill;
+  z-index: 3;
+  filter: grayscale(1);
+}
+.wangari-maathai {
+  bottom: 29%;
+  right: 17%;
+  width: auto;
+  height: 200px;
+  object-fit: fill;
+  z-index: 2;
+}
+.eluid-text {
+  bottom: 58.7%;
+  right: 15%;
+  width: auto;
+  height: 90px;
+  object-fit: fill;
+  z-index: 1;
+}
+
+.center-piece {
+  .mzee-jomo {
+    top: 3em;
+    left: -4em;
+    width: 200px;
+    height: auto;
+    object-fit: fill;
+    filter: grayscale(1);
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .wangari-maathai {
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: 140px;
+    object-fit: fill;
+    z-index: 3;
+  }
+  .eluid-text {
+    bottom: 15vh;
+    right: 5%;
+    width: auto;
+    height: 60px;
+    object-fit: fill;
+    z-index: 4;
+  }
+  .africa-people {
+    bottom: 0;
+    right: 43%;
+    width: auto;
+    height: 120px;
+    object-fit: fill;
+    z-index: 4;
+    filter: grayscale(1);
+  }
+  .elephants {
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    object-fit: fill;
+  }
+  .maasai {
+    bottom: 10%;
+    left: 13%;
+    height: 100px;
+    object-fit: fill;
+    z-index: 1;
+  }
+  .women-farming {
+    display: none;
+  }
+  .torn-paper-top-right {
+    height: 100px;
+    object-fit: fill;
+  }
+  .woman-farming {
+    top: 25vh;
+    left: 50%;
+    width: auto;
+    height: 140px;
+  }
+  .africa-map {
+    width: auto;
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+  }
+  .nairobi-cbd {
+    object-fit: cover;
+    object-position: left center;
+  }
+  .nairobi-highway {
+    object-fit: cover;
+  }
+  .center-piece {
+    .mzee-jomo {
+      top: 3em;
+      left: -4em;
+      width: 200px;
+      height: auto;
+      object-fit: fill;
+      filter: grayscale(1);
+    }
+    p {
+      font-size: 9px;
+    }
+  }
+}
