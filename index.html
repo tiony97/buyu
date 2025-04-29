@@ -20,8 +20,11 @@
   <body class="relative">
     <!--Overlay Menu-->
     <div class="overlay-menu flex flex-col">
-      <span id="menuClose" class="h-fit w-fit mt-12 cursor-pointer self-center">
-        <i class="fas fa-xmark text-white"></i>
+      <span
+        id="menuClose"
+        class="relative p-4 rounded-full flex items-center justify-center border-2 border-white mt-12 cursor-pointer self-center"
+      >
+        <i class="fas fa-xmark text-white text-2xl"></i>
       </span>
       <div class="container">
         <!--Menu Links-->
@@ -47,6 +50,9 @@
         </div>
       </div>
     </div>
+
+    <!--Cover Film-->
+    <div class="cover"></div>
 
     <!--Header-->
     <header class="absolute top-0 left-0 w-full h-auto z-20">
@@ -173,7 +179,7 @@
         />
 
         <h3
-          class="relative uppercase text-lg lg:text-2xl font-medium mb-2 z-10"
+          class="relative uppercase text-lg md:text-2xl lg:text-2xl font-medium mb-2 z-10"
           style="transform: rotate(-4deg)"
         >
           Welcome to

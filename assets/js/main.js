@@ -4,9 +4,9 @@ $(document).ready(() => {
   animation
     .to("header", { opacity: 0, duration: 0.5, ease: "power2.out" })
     .to(
-      ".center-piece",
-      { opacity: 0, duration: 0.5, ease: "power2.out" },
-      "-=0.2"
+      ".cover",
+      { height: "100vh", duration: 0.5, ease: "power2.out" },
+      "-=0.1"
     )
     .to(
       ".overlay-menu",
