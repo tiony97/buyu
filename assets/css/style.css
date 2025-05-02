@@ -3,6 +3,7 @@
 :root {
   --primary-color: #ffffff;
   --secondary-color: #511e08;
+  --accent-main: #ffeb3b;
 }
 
 /* Fonts */
@@ -27,6 +28,36 @@ body {
 
 .font-special {
   font-family: "Bai Jamjuree", sans-serif;
+}
+
+.cursor-dot {
+  width: 5px;
+  height: 5px;
+  background-color: var(--primary-color);
+  z-index: 999999;
+}
+
+.cursor-outline {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--accent-main);
+  background-color: var(--accent-main);
+  z-index: 99999;
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.grow {
+  transform: scale(3);
+  mix-blend-mode: difference;
 }
 
 .cover {
@@ -82,7 +113,24 @@ body {
   transition: all 0.3s ease-in;
 }
 
+#ripple-area {
+  width: 100vw;
+  height: 100%;
+  background: url("../images/overlay torn texture.png") center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0.2;
+}
+
 /* Home page background images */
+.pulse-image {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
 .nairobi-cbd {
   width: 56%;
   height: 100%;
@@ -107,7 +155,7 @@ body {
   height: 180px;
   -o-object-fit: fill;
      object-fit: fill;
-  z-index: 2;
+  z-index: 4;
   filter: grayscale(1);
 }
 
@@ -140,7 +188,7 @@ body {
   height: auto;
   -o-object-fit: fill;
      object-fit: fill;
-  z-index: 2;
+  z-index: 3;
   filter: grayscale(1);
 }
 
@@ -162,7 +210,7 @@ body {
   height: 100px;
   -o-object-fit: fill;
      object-fit: fill;
-  z-index: 1;
+  z-index: 2;
   filter: grayscale(1);
 }
 
@@ -173,7 +221,7 @@ body {
   height: auto;
   -o-object-fit: fill;
      object-fit: fill;
-  z-index: 2;
+  z-index: 3;
   filter: grayscale(1);
 }
 
@@ -229,7 +277,7 @@ body {
   height: 120px;
   -o-object-fit: fill;
      object-fit: fill;
-  z-index: 3;
+  z-index: 2;
   filter: grayscale(1);
 }
 
@@ -241,9 +289,12 @@ body {
   -o-object-fit: fill;
      object-fit: fill;
   z-index: 2;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
 
 .eluid-text {
+  display: none;
   bottom: 58.7%;
   right: 15%;
   width: auto;
@@ -264,6 +315,11 @@ body {
 }
 .center-piece p {
   font-size: 14px;
+}
+
+/* Pulse animation class from Animate.css */
+.animate__pulse-infinite {
+  animation: pulse 2s infinite;
 }
 
 /* Media Queries */
